@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="description" content="Leisure Lab - 英语学习小组的休闲活动资料库与演讲工作台">
+  <title>Leisure Lab｜我们的休闲活动</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a href="#/" class="logo" aria-label="返回首页">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">Leisure Lab</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="切换菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu" aria-label="主导航">
+        <a href="#/" class="nav-link" data-route="/">活动资料库</a>
+        <a href="#/compare" class="nav-link" data-route="/compare">活动对比 <span class="badge" id="compareBadge" style="display:none">0</span></a>
+        <a href="#/team" class="nav-link" data-route="/team">小组分工</a>
+        <a href="#/workshop" class="nav-link" data-route="/workshop">演讲工作台</a>
+        <a href="#/sources" class="nav-link" data-route="/sources">资料来源</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="main-content" role="main">
+    <!-- Pages rendered by JS -->
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Leisure Lab · 英语学习小组 · 2026</p>
+      <p class="footer-note">活动资料和演讲稿为学习参考，个人经历请按实际情况修改。时间和费用标注为"参考"。</p>
+    </div>
+  </footer>
+
+  <!-- Modal for import confirmation -->
+  <div class="modal-overlay" id="modalOverlay" hidden>
+    <div class="modal" role="dialog" aria-labelledby="modalTitle">
+      <h3 id="modalTitle">确认导入</h3>
+      <p id="modalBody"></p>
+      <div class="modal-actions">
+        <button class="btn btn-secondary" id="modalCancel">取消</button>
+        <button class="btn btn-primary" id="modalConfirm">确认导入</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast notifications -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Data files -->
+  <script src="js/data/categories.js"></script>
+  <script src="js/data/activities-sports.js"></script>
+  <script src="js/data/activities-outdoor.js"></script>
+  <script src="js/data/activities-reading.js"></script>
+  <script src="js/data/activities-music.js"></script>
+  <script src="js/data/activities-art.js"></script>
+  <script src="js/data/activities-lifestyle.js"></script>
+  <script src="js/data/activities-social.js"></script>
+  <script src="js/data/activities-culture.js"></script>
+  <script src="js/data/speeches.js"></script>
+  <script src="js/data/sources.js"></script>
+  <!-- App logic -->
+  <script src="js/app.js"></script>
+</body>
+</html>
